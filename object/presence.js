@@ -19,7 +19,7 @@ module.exports = warn;
   }
 
   Object.prototype.presence = function(){
-    return Object.keys(this).length > 0;
+    return Object.keys(this).length > 0 ? this : null;
   };
 
   Object.defineProperty(Object.prototype, "presence", {enumerable: false});
